@@ -8,24 +8,32 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Шапка сайта-->
     <header>
-      <div class="container">
-        <nav>
+      <div class="container flex-header">
+        <nav class="flex-nav">
           <a href="./index.html" class="logo"
             ><span class="accent">Web</span> Studio</a
           >
 
-          <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
+          <ul class="site-nav list flex-nav">
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
-        <address class="contacts-nav">
+        <address class="contacts-nav mail-nav">
           <a href="mailto:info@devstudio.com" class="link"
             >info@devstudio.com</a
           >
@@ -47,8 +55,8 @@
         <div class="container">
           <!-- h2 потом скрыть!!! -->
           <h2 class="hidden">Преимущества</h2>
-          <ul class="list">
-            <li>
+          <ul class="list flex-features">
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/antenna-1.svg"
@@ -62,7 +70,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/clock-1.svg"
@@ -76,7 +84,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/diagram-1.svg"
@@ -90,7 +98,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/astronaut-1.svg"
@@ -112,8 +120,8 @@
       <section class="section">
         <div class="container">
           <h2 class="title big">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+          <ul class="list flex-apps">
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/desktop-applications.jpg"
@@ -122,7 +130,7 @@
               /></a>
               <h3 class="subtitle">Десктопные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/mobile-applications.jpg"
@@ -131,7 +139,7 @@
               /></a>
               <h3 class="subtitle">Мобильные приложения</h3>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/desiner-solutions.jpg"
@@ -147,17 +155,18 @@
       <section class="section bg-highlighting">
         <div class="container">
           <h2 class="title big">Наша команда</h2>
-          <ul class="list">
+          <ul class="list flex-command">
             <!-- Джон Смит -->
-            <li>
+            <li class="item">
               <img
+                class="photo"
                 src="./images/john-smith-photo.jpg"
                 alt="Джон Смит"
                 width="278"
               />
               <h3 class="title medium">John Smith</h3>
               <p class="text-small">Product Designer</p>
-              <ul class="list">
+              <ul class="list flex-social">
                 <li>
                   <a href=""
                     ><img
@@ -193,15 +202,16 @@
               </ul>
             </li>
             <!-- Марта Стюарт -->
-            <li>
+            <li class="item">
               <img
+                class="photo"
                 src="./images/marta-stewart-photo.jpg"
                 alt="Марта Стюарт"
                 width="278"
               />
               <h3 class="title medium">Marta Stewart</h3>
               <p class="text-small">Frontend Developer</p>
-              <ul class="list">
+              <ul class="list flex-social">
                 <li>
                   <a href=""
                     ><img
@@ -237,15 +247,16 @@
               </ul>
             </li>
             <!-- Роберт Якис -->
-            <li>
+            <li class="item">
               <img
+                class="photo"
                 src="./images/robert-jakis-photo.jpg"
                 alt="Роберт Якис"
                 width="278"
               />
               <h3 class="title medium">Robert Jakis</h3>
               <p class="text-small">Marketing</p>
-              <ul class="list">
+              <ul class="list flex-social">
                 <li>
                   <a href=""
                     ><img
@@ -281,15 +292,16 @@
               </ul>
             </li>
             <!-- Мартин Доу -->
-            <li>
+            <li class="item">
               <img
+                class="photo"
                 src="./images/martin-doe-photo.jpg"
                 alt="Мартин Доу"
                 width="278"
               />
               <h3 class="title medium">Martin Doe</h3>
               <p class="text-small">UI Designer</p>
-              <ul class="list">
+              <ul class="list flex-social">
                 <li>
                   <a href=""
                     ><img
@@ -331,13 +343,13 @@
       <section class="section">
         <div class="container">
           <h2 class="title big">Постоянные клиенты</h2>
-          <ul class="list">
-            <li>
+          <ul class="list flex-company">
+            <li class="item">
               <a href=""
                 ><img src="./images/client-1.svg" alt="YA & CO" width="175"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/client-2.svg"
@@ -345,12 +357,12 @@
                   width="175"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img src="./images/client-3.svg" alt="Company" width="175"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/client-4.svg"
@@ -358,12 +370,12 @@
                   width="175"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img src="./images/client-5.svg" alt="Brand" width="175"
               /></a>
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/client-6.svg"
@@ -377,70 +389,72 @@
     </main>
     <!-- Футер -->
     <footer>
-      <div class="container">
-        <div>
-          <div>
+      <div class="container footer">
+        <div class="flex-footer">
+          <div class="flex-footer-address">
             <a href="./index.html" class="logo logo-footer">
               <span class="accent">Web</span> Studio
             </a>
             <address class="address-nav">
-              <a href="#" class="link">г. Киев, пр-т Леси Украинки, 26</a><br />
-              <a href="mailto:info@devstudio.com" class="transparent"
+              <a href="#" class="link item">г. Киев, пр-т Леси Украинки, 26</a
+              ><br />
+              <a href="mailto:info@devstudio.com" class="transparent item"
                 >info@example.com</a
               ><br />
-              <a href="tel:+380991111111" class="transparent"
+              <a href="tel:+380991111111" class="transparent item"
                 >+38 099 111 11 11</a
               ><br />
             </address>
           </div>
-          <div class="social">
+          <div class="social slogan">
             <p class="link">присоединяйтесь</p>
-            <ul class="list">
-              <li>
-                <a href=""
-                  ><img
+            <!-- <ul class="list flex-social">
+              <li class="item">
+                <a href="">
+                  <img
                     src="./images/ellipse.svg"
-                    alt="Ссылка на инстаграмм"
-                    width="44" /><img
+                    alt="Ссылка на линкедин"
+                    width="44" />
+                  <img
                     src="./images/instagram-logo.svg"
                     alt="Инстаграмм"
                     width="20"
                 /></a>
               </li>
-              <li>
-                <a href=""
-                  ><img
+              <li class="item">
+                <a href="">
+                  <img
                     src="./images/ellipse.svg"
-                    alt="Ссылка на твиттер"
-                    width="44" /><img
-                    src="./images/twitter-logo.svg"
-                    alt="Твиттер"
-                    width="20"
+                    alt="Ссылка на линкедин"
+                    width="44" />
+                  <img src="./images/twitter-logo.svg" alt="Твиттер" width="20"
                 /></a>
               </li>
-              <li>
+              <li class="item">
                 <a href=""
                   ><img
                     src="./images/ellipse.svg"
-                    alt="Ссылка на фейсбук"
-                    width="44" /><img
+                    alt="Ссылка на линкедин"
+                    width="44" />
+                  <img
                     src="./images/facebook-logo.svg"
                     alt="Фейсбук"
                     width="20"
                 /></a>
               </li>
-              <li>
-                <a href=""
-                  ><img
+              <li class="item">
+                <a href="">
+                  <img
                     src="./images/ellipse.svg"
                     alt="Ссылка на линкедин"
-                    width="44" /><img
+                    width="44" />
+                  <img
                     src="./images/linkedin-logo.svg"
                     alt="Линкедин"
                     width="20"
                 /></a>
               </li>
-            </ul>
+            </ul> -->
           </div>
           <div class="social">
             <p class="link">Подпишитесь на рассылку</p>
