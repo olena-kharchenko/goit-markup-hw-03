@@ -273,7 +273,7 @@ p {
   display: block;
 }
 /* На будущее - текст на картинку */
-/*.img-wrap {
+.img-wrap {
   position: relative;
 }
 
@@ -282,7 +282,7 @@ p {
   left: 0;
   bottom: 0;
   width: 100%;
-} */
+}
 .subtitle {
   padding-top: 27px;
   padding-bottom: 27px;
