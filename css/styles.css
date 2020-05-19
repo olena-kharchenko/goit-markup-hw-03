@@ -37,16 +37,16 @@ body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid goldenrod; */
+  outline: 2px solid goldenrod;
 }
 
 h1,
@@ -96,7 +96,7 @@ p {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 86px;
+  margin-right: 85px;
 
   color: var(--primary-black-color);
   text-decoration: none;
@@ -157,7 +157,7 @@ p {
 .hero {
   text-align: center;
 
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
 .hero-title {
@@ -207,8 +207,8 @@ p {
   padding-bottom: 94px;
 }
 
-.no-pad-bottom {
-  padding-bottom: 0;
+.underline {
+  border-bottom: 1px solid #ececec;
 }
 
 .section .title {
@@ -364,6 +364,10 @@ p {
   width: 175px;
 }
 
+.flex-company img {
+  display: block;
+}
+
 .flex-company .item:not(:last-child) {
   margin-right: 30px;
 }
@@ -378,6 +382,8 @@ footer {
 
 .flex-footer {
   display: flex;
+  align-items: baseline;
+  justify-content: space-between;
   padding-bottom: 28px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -387,7 +393,6 @@ footer {
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 10px;
-  margin-right: 281px;
 
   color: var(--primary-white-color);
 
@@ -403,6 +408,9 @@ footer {
 }
 
 .address-nav {
+  display: flex;
+  flex-direction: column;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -509,13 +517,10 @@ footer {
 }
 
 .flex-examples .item {
-  width: 380px;
+  width: 370px;
   margin: 15px;
-  padding-bottom: 20px;
 
   background: var(--primary-white-color);
-  border: 1px solid #eeeeee;
-  border-radius: 5px;
 }
 
 .portfolio h2 {
@@ -527,11 +532,6 @@ footer {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-indent: 24px;
-}
-
-.sсreenshot {
-  margin-bottom: 20px;
 }
 
 .caption {
@@ -539,7 +539,6 @@ footer {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  text-indent: 24px;
 }
 
 .description {
@@ -549,5 +548,25 @@ footer {
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
-  text-indent: 24px;
+}
+/* Оформление карточек портфолио */
+.card {
+  width: 370px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+.card img {
+  display: block;
+}
+
+.card-content {
+  padding: 20px 20px;
+  background: #ffffff;
+  /* Рамка не везде а только с трёх сторон */
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
